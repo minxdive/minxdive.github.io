@@ -1,0 +1,37 @@
+/*
+  ECS Game Programming 24/11/28
+
+  Dave Churchill (Memorial University) 
+  Computer Science 4300 - Fall 2022 
+
+  Churchill 교수의 강의를 보고, ECS 에 대하여 이해하고, 
+  SDL2 로 게임을 만들어봅니다.
+*/
+
+// C/C++ STL and SDL2 Libraries
+#include <iostream>
+#include "SDL2/SDL.h"
+#include "game.h"
+
+int main(int argc, char* argv[]) 
+{
+  try 
+  {
+    Game game = Game();
+    game.start("Hello SDL2! Hello ECS!");
+
+    return 0;
+  }
+  catch (std::runtime_error& e)
+  {
+    std::cerr << e.what() << '\n';
+    return -1;
+  }
+  catch (...)
+  {
+    std::cerr << "exception!\n";
+    return -2;
+  }
+
+	return 0;
+}
