@@ -15,4 +15,4 @@ Bullet => draw 반지름, collision 반지름, 속도, RGB R, G, B, 정N각형, 
   Churchill 교수의 강의를 보고, ECS 에 대하여 이해하고, 
   SDL2 로 게임을 만들어봅니다.
 
-https://github.com/user-attachments/assets/98cf9311-d1dd-4526-8f92-5b7545faa5ba
+https://github.com/user-attachments/assets/1a46ab51-a2a0-4441-9f38-bfb3202f8ba2
