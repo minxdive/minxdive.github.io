@@ -86,7 +86,7 @@ private:
   int score = 0;
   int current_frame = 0;
   int last_enemy_spawn_time = 0;
-  bool paused = false;  // 일시정지
+  //bool paused = false;  // 일시정지
   //bool running;
   std::shared_ptr<Entity> player;
 
