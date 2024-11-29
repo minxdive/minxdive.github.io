@@ -82,13 +82,13 @@ void Game_scene::sdl_initialize_window(SDL_Window* window, const char* const& wi
   // SDL2 초기화
   if (SDL_Init(SDL_INIT_EVERYTHING) < 0) 
   {
-    shutdown("Game::initialize(), SDL_Init(): SDL2 라이브러리 초기화에 실패했습니다. SDL_ERROR: ", SDL_GetError());
+    shutdown("Game_scene::sdl_initialize_window(), SDL_Init(): SDL2 라이브러리 초기화에 실패했습니다. SDL_ERROR: ", SDL_GetError());
   }
 
   // Linear filtering 설정 (OpenGL, Direct3D 지원)
   if ( !SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1") )
   {
-    shutdown("Game::initialize(), SDL_SetHint(): Linear filtering 동작에 실패했습니다. SDL_ERROR: ", SDL_GetError());
+    shutdown("Game_scene::sdl_initialize_window(), SDL_SetHint(): Linear filtering 동작에 실패했습니다. SDL_ERROR: ", SDL_GetError());
   }
 
   // window 생성
@@ -96,7 +96,7 @@ void Game_scene::sdl_initialize_window(SDL_Window* window, const char* const& wi
                             screen_width, screen_height, SDL_WINDOW_SHOWN);
   if (window == nullptr)
   {
-    shutdown("Game::initialize(), SDL_CreateWindow(): window 생성에 실패했습니다. SDL_ERROR: ", SDL_GetError());
+    shutdown("Game_scene::sdl_initialize_window(), SDL_CreateWindow(): window 생성에 실패했습니다. SDL_ERROR: ", SDL_GetError());
   }
 
   sdl_initialize_renderer(window);
@@ -109,7 +109,7 @@ void Game_scene::sdl_initialize_renderer(SDL_Window* window)
   renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
   if (renderer == nullptr)
   {
-    throw std::runtime_error{"Game_scene::sdl_initialize_renderer(), renderer 가 nullptr 입니다."};
+   shutdown("Game_scene::sdl_initialize_renderer(), renderer 가 nullptr 입니다.", SDL_GetError());
   }
   SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0xFF);
   SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
