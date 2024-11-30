@@ -22,6 +22,8 @@ group :jekyll_plugins do
   gem 'jekyll-paginate', '~> 1.1'
   gem 'jekyll-include-cache', '~> 0.2.1'
   gem 'faraday-retry', '~> 2.2', '>= 2.2.1'
+  gem 'csv', '~> 3.3'
+  gem 'base64', '~> 0.2.0'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

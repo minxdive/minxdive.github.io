@@ -279,6 +279,8 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  base64 (~> 0.2.0)
+  csv (~> 3.3)
   faraday-retry (~> 2.2, >= 2.2.1)
   github-pages
   http_parser.rb (~> 0.8.0)
