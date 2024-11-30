@@ -284,6 +284,7 @@ DEPENDENCIES
   faraday-retry (~> 2.2, >= 2.2.1)
   github-pages
   http_parser.rb (~> 0.8.0)
+  jekyll (~> 3.9)
   jekyll-coffeescript (~> 1.2.2)
   jekyll-commonmark-ghpages (~> 0.5.1)
   jekyll-default-layout (~> 0.1.5)
