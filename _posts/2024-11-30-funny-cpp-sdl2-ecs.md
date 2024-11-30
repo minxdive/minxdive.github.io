@@ -41,7 +41,8 @@ SFML 로 진행하는 강의였다. 나는 대신 SDL2 에 관심이 있어 SDL2
 #include "SDL2/SDL.h"
 #include "game.h"
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) 
+{
   try {
     Game game = Game();
     game.start("Hello SDL2! Hello ECS!");
