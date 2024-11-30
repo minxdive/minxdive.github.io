@@ -26,15 +26,14 @@ group :jekyll_plugins do
   gem 'base64', '~> 0.2.0'
   gem 'jekyll-theme-primer', '~> 0.6.0'
   gem 'jekyll-github-metadata', '~> 2.16.1'
-  #jekyll-seo-tag
-  #jekyll-coffeescript
-  #jekyll-commonmark-ghpages
-  #jekyll-github-metadata
-  #jekyll-relative-links
-  #jekyll-optional-front-matter
-  #jekyll-readme-index
-  #jekyll-default-layout
-  #jekyll-titles-from-headings
+  gem 'jekyll-seo-tag', '~> 2.8.0'
+  gem 'jekyll-coffeescript', '~> 1.2.2'
+  gem 'jekyll-commonmark-ghpages', '~> 0.5.1'
+  gem 'jekyll-relative-links', '~> 0.6.1'
+  gem 'jekyll-optional-front-matter', '~> 0.3.2'
+  gem 'jekyll-readme-index', '~> 0.3.0'
+  gem 'jekyll-default-layout', '~> 0.1.5'
+  gem 'jekyll-titles-from-headings', '~> 0.5.3'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
