@@ -1,92 +1,29 @@
-# Site
-title: Funny C++
-bio: "재미있게 공부하는 C++ 이야기"
-description: "Menu about"
-reading_time: true
-words_per_minute: 200
-logo: "assets/img/logo.png"
-background: "assets/img/moonrise-background.jpg"
-tiled_bg: false # Set this true if you want to tile your background image, otherwise it will be covered
-locale: en_US
-url: "https://github.com/minxdive"
+# Site Build Settings
 
-# Jekyll
-permalink: /:title/
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-mathjax: true
-sass:
-  sass_dir: _sass
-  style: compressed
+# Jekyll-paginate-v2 configuration
+#  pagination:
+#   enabled: true
+#   per_page: 5
+#   permalink: '/page/:num/'
+#   title: ':title - page :num of :max'
+#   limit: 0
+#   sort_field: 'date'
+#   sort_reverse: true
 
-# Comments
+# jekyll-paginate configuration
+paginate:            5
 
-# Social
-# if you don't have any of social below, comment the line.
-#google:
-# plus: username
-#analytics:
-#verify:
-#ad-client:
-#ad-slot:
-#bing-verify:
-#email:
-#twitter: username
-#facebook: username
-github-url: minxdive
-#stackoverflow: 123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin: username
-#xing: username
-#instagram: username
-#lastfm: username
-#tumblr: username
-#medium: '@username'
-#pinterest: username
-#foursquare: username
-#steam: username
-#dribbble: username
-#youtube: username
-#youtube-channel: channel
-#soundcloud: username
-#weibo: username
-#flickr: username
-#codepen: username
-#keybase: username
-#xmpp: username@server.com
-#hackernews: username
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           /:title
+plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
-# Plugins
-plugins:
-  - jekyll-mentions
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-include-cache
+# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+title:		           'Funny C++'
+description:	       '재미있는 C++ 이야기'
+author:              'minxdive'
 
-jekyll-mentions:
-  base_url: "https://minxdive.github.io"
-
-# Exclude list
-exclude:
-  [
-    README.md,
-    Gemfile,
-    Gemfile.lock,
-    node_modules,
-    gulpfile.js,
-    package.json,
-    _site,
-    src,
-    vendor,
-    CNAME,
-    LICENSE,
-    Rakefile,
-  ]
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+#feed:
+#  path: rss-feed.xml

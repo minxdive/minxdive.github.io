@@ -1,3 +1,20 @@
-{% assign wpm = site.words_per_minute | append: '.0' %}
-{% assign readtime = content | strip_html | number_of_words | divided_by:wpm | round %}
-Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
+{% if post.layout != post %}
+  {% assign words = post.content | strip_html | number_of_words %}
+  {% if words < 180 %}
+    less than 1 minute read
+  {% elsif words < 360 %}
+    1 minute read
+  {% else %}
+    {{ words | divided_by:180 }} minute read
+  {% endif %}
+{% endif %}
+{% if post.layout == post %}
+  {% assign words = content | number_of_words %}
+  {% if words < 180 %}
+    less than 1 minute read
+  {% elsif words < 360 %}
+    1 minute read
+  {% else %}
+    {{ words | divided_by:180 }} minute read
+  {% endif %}
+{% endif %}

@@ -1,11 +1,10 @@
 ---
 layout: post
 title:  "Vscode 에서 SDL2 사용하기"
-date:   2024-12-01 01:52:00 +0900
-excerpt: ""
+author: "minxdive"
+categories: statement, diary
 tags: [C++, SDL2]
-feature: "https://github.com/user-attachments/assets/554b73f6-3a8e-4da5-917b-b0a916ba6275"
-comments: false
+image: 
 ---
 
 SDL2 를 Vscode 에서 사용하고 싶은데, 디버깅 (F5) 키를 누르고 컴파일하고 싶었는데 에러가 매번마다 발생하였다.

@@ -1,11 +1,10 @@
 ---
 layout: post
 title:  "Git Portable 을 사용, 윈도우 터미널에 추가해보자"
-date:   2024-11-28 22:18:00 +0900
-excerpt: "PortableGit 을 윈도우 터미널에 사용해보자"
+author: "minxdive"
+categories: statement
 tags: [Git, Windows Terminal]
-feature: ""
-comments: false
+image: 
 ---
 
 많은 분들이 사용하는 Github 와 Git 인데요, Git 을 Portable ("thumbdrive edition") 즉 무설치로 받아서 사용해보겠습니다.
