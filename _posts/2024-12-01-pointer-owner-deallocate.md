@@ -94,8 +94,7 @@ int main()
   upamecano->print_profile(1998, "France");
   delete upamecano;
 
-  if (minjae != nullptr)
-  {
+  if (minjae != nullptr) {
     std::print("nullptr 가 아니라고?\n");
     delete minjae;
   }
