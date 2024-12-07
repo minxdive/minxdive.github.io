@@ -64,12 +64,14 @@ bash 를 선택합니다.
 
 윈도우 터미널에서 새 탭으로 열기를 클릭하면, 우리가 추가한 프로필이 나타납니다.
 
-![제목 없음](https://github.com/user-attachments/assets/051cb88d-ecd2-4b97-b2d7-1338d95c451c)
+![11](https://github.com/user-attachments/assets/051cb88d-ecd2-4b97-b2d7-1338d95c451c)
 
 저는 Git-bash 로 추가하였습니다.
 
 자신이 추가한 Git 을 클릭하시면, 
 
-![스크린샷 2024-11-28 225859](https://github.com/user-attachments/assets/41409f7e-f9b7-45ee-af68-d824dcfb9d8d)
+![12](https://github.com/user-attachments/assets/41409f7e-f9b7-45ee-af68-d824dcfb9d8d)
 
 정상적으로 Git 이 실행됨을 알 수 있습니다.
+
+<br><br><br>
